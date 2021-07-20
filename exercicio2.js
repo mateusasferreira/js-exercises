@@ -13,8 +13,8 @@ function removeDuplicates(array){
 
     for(i = 0; i < array.length; i++){
         
-        //se for o primeiro item do array, automaticamente vai o array de valores únicos
-        //para os próximos valores, verifica se é diferente do anterior, e só se for, vai o array de valores únicos
+        //se for o primeiro item do array, automaticamente vai para o array de valores únicos
+        //para os próximos valores, verifica se é diferente do anterior, e só se for, vai para o array de valores únicos
         if(i === 0 || (i > 0 && array[i] !== array[i -1])) uniqueValues.push(array[i])
     }
     
